@@ -59,7 +59,7 @@ Si tienes un editor de Android instalado, puedes abrir el emulador automáticame
 
 Esto abrirá la aplicación en tu PC usando el emulador Android.
 
-# En un Dispositivo Real:
+# En un Dispositivo Real
 
 Si prefieres usar un dispositivo real, descarga la aplicación Expo Go desde la tienda de aplicaciones (disponible para Android y iOS).
 
