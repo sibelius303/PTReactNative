@@ -10,13 +10,13 @@
 
 Desarrollar las distintas pantallas proporcionadas en el PDF enviado, cuidadando la integridad del diseño y la daptabilidad de los dispositivosd
 
-# LINK DEL REPOSITORIO DE GITHUB: [Repo](https://github.com/sibelius303/PTReactNative)
+**LINK DEL REPOSITORIO DE GITHUB: [Repo](https://github.com/sibelius303/PTReactNative)**
 
-# Plataforma de Desarrollo: Expo
+**Plataforma de Desarrollo: Expo**
 
-# Frameworks de Desarrollo: React Native, Tailwind CSS
+**Frameworks de Desarrollo: React Native, Tailwind CSS**
 
-# Librería de Componentes Utilizados: react-native-dropdown-select-list
+**Librería de Componentes Utilizados: react-native-dropdown-select-list**
 
 # Requisitos Previos:
 
@@ -72,9 +72,9 @@ Abre la aplicación Expo Go y selecciona la opción "Scan QR code". Esto activar
 Abre la aplicación de la cámara en tu dispositivo y escanea el código QR que aparece en la consola del proyecto. Selecciona la opción para abrir la aplicación en Expo Go, y el proyecto comenzará a compilarse y a ejecutarse en tu dispositivo.
 
 
-# LINK DE EXPO GO PLAY STORE: https://play.google.com/store/apps/details?id=host.exp.exponent&hl=es_AR
+**LINK DE EXPO GO PLAY STORE: https://play.google.com/store/apps/details?id=host.exp.exponent&hl=es_AR**
 
-# LINKK DE EXPO GO APP STORE: https://apps.apple.com/ar/app/expo-go/id982107779
+**LINKK DE EXPO GO APP STORE: https://apps.apple.com/ar/app/expo-go/id982107779**
 
 **Nota: Se recomienda la visualización mediante la aplicación Expo Go desde su celular, ya que fue la forma en que se desarrollaron las pantallas.**
 
