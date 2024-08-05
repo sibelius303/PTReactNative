@@ -1,0 +1,36 @@
+import { Text, View, TouchableOpacity, Image, Platform } from "react-native";
+import NavigationLayout from "../component/layouts/NavigationLayout";
+import { SelectComponent } from "../component/utils/SelectComponent";
+import PointsRoadComponent from "../component/utils/PointsRoadComponent";
+
+
+export default function Screen2() {
+    const isIPhone = Platform.OS === 'ios' && Platform.isPad === false;
+    return (
+        <NavigationLayout>
+            <View className={isIPhone ? "h-screen w-screen pr-8 justify-between px-4 pb-6"
+                : "h-screen w-screen pr-8 justify-between px-4"}
+            >
+                <View>
+                    <View className="flex-row">
+                        <View className="w-1/2">
+                            <Text className="text-xl">Hola, Carlos</Text>
+                            <Text className="text-gray-500">¿A dónde quieres llegar?</Text>
+                        </View>
+                    </View>
+                    <View className="mt-4">
+                        <SelectComponent placheholder={"Escribe..."} />
+                    </View>
+                </View>
+                <PointsRoadComponent />
+                <View >
+                    <TouchableOpacity
+                        className="bg-botonColor mb-32 text-lg w-full p-3 items-center rounded-lg"
+                    >
+                        <Text className="font-extrabold text-lg text-white tracking-widest">Ver brecha</Text>
+                    </TouchableOpacity>
+                </View>
+            </View>
+        </NavigationLayout>
+    )
+};
