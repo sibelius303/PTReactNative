@@ -8,7 +8,7 @@
 
 ## Objetivo
 
-Desarrollar las distintas pantallas proporcionadas en el PDF enviado, cuidadando la integridad del diseño y la daptabilidad de los dispositivosd
+Desarrollar las distintas pantallas proporcionadas en el PDF enviado, cuidando la integridad del diseño y la adaptabilidad a los dispositivos.
 
 **LINK DEL REPOSITORIO DE GITHUB: [Repo](https://github.com/sibelius303/PTReactNative)**
 
