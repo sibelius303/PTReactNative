@@ -1,5 +1,7 @@
 Prueba Técnica React Native - César Vallenilla
 
+LINK DEL REPOSITORIO DE GITHUB: https://github.com/sibelius303/PTReactNative
+
 Plataforma de Desarrollo: Expo
 
 Frameworks de Desarrollo: React Native, Tailwind CSS
