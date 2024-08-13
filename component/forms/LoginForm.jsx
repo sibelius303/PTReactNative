@@ -3,15 +3,21 @@ import { View, TextInput, TouchableOpacity, Text, ImageBackground, Dimensions, I
 import { useRouter } from 'expo-router';
 import { LinkdnIcon, PassWordIcon, UserIcon } from '../icons/icons';
 
-const LoginForm = () => {
+
+const LoginForm = ({save}) => {
     const router = useRouter();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    
 
 
     const handleLogin = () => {
-        console.log('Email:', email);
-        console.log('Password:', password);
+        const auth = {
+            email: email,
+            password: password
+        }
+        console.log(auth);
+        save("auth_key", auth)
         router.push('/screen1')
     };
 

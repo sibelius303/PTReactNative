@@ -1,9 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, Text, ImageBackground, Image } from 'react-native';
 import { LinkdnIcon } from '../component/icons/icons';
 import LoginForm from '../component/forms/LoginForm';
+import * as SecureStore from 'expo-secure-store';
+import { useRouter } from 'expo-router';
+
+async function save(key, value) {
+    console.log("entre")
+    await SecureStore.setItemAsync(key, JSON.stringify(value));
+    console.log("Guarde")
+  }
 
 const Index = () => {
+    const router = useRouter();
+
+    async function getValueFor(key) {
+        let result = await SecureStore.getItemAsync(key);
+        if (result) {
+          router.push('/screen1')
+        } else {
+          console.log('Inicia Sesion');
+        }
+      }
+    
+    useEffect(() => {
+        getValueFor("auth_key")
+    }, [])
+    
     return (
         <ImageBackground
             source={require('../assets/fondoedit2.png')}
@@ -14,7 +37,7 @@ const Index = () => {
                     source={require('../assets/iconosendos.png')}
                     className=" h-[60px] w-[250px] bg-cover mt-10"
                 />
-                <LoginForm />
+                <LoginForm save={save}/>
                 <View className="mt-20 flex-1 items-center h-3/4">
                     <Text className="text-gray-400 mb-10">
                         o Continua con
