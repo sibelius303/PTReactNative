@@ -1,0 +1,20 @@
+{
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "EXPO_PUBLIC_VARIABLE_ENTORNO": "HOLA_SOY_UNA_VARIABLE_DE_ENTORNO"
+        }
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "EXPO_PUBLIC_VARIABLE_ENTORNO": "HOLA_SOY_UNA_VARIABLE_DE_ENTORNO"
+        }
+      }
+    }
+  }
+}

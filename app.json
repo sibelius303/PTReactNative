@@ -8,7 +8,7 @@
     "userInterfaceStyle": "light",
     "scheme": "sendos.ia",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/iconosendos.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,15 +17,24 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/iconosendos.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.example.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "63053a58-ffac-48da-8108-3e6053741391"
+      }
+    }
   }
 }

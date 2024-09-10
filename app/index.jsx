@@ -4,12 +4,15 @@ import { LinkdnIcon } from '../component/icons/icons';
 import LoginForm from '../component/forms/LoginForm';
 import * as SecureStore from 'expo-secure-store';
 import { useRouter } from 'expo-router';
+import { EXPO_PUBLIC_VARIABLE_ENTORNO } from '@env';
 
 async function save(key, value) {
     console.log("entre")
     await SecureStore.setItemAsync(key, JSON.stringify(value));
     console.log("Guarde")
   }
+
+  console.log(EXPO_PUBLIC_VARIABLE_ENTORNO)
 
 const Index = () => {
     const router = useRouter();
@@ -40,7 +43,7 @@ const Index = () => {
                 <LoginForm save={save}/>
                 <View className="mt-20 flex-1 items-center h-3/4">
                     <Text className="text-gray-400 mb-10">
-                        o Continua con
+                        o Continua con {EXPO_PUBLIC_VARIABLE_ENTORNO}
                     </Text>
                     <LinkdnIcon />
                     <View className="items-center mt-10">
